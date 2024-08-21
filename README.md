@@ -13,10 +13,9 @@ Download and Run the Script
 
 Use the following command to download the Python script directly from the repository and execute it:
 
-bash
-Copy code
 curl -O https://raw.githubusercontent.com/TIR3D4/Marzban-Node-Auto-Setup-Script/main/setup_marzban_node.py
 sudo python3 setup_marzban_node.py
+
 Enter SSL Certificate
 
 During the execution of the script, you will be prompted to enter your SSL certificate. Paste the content of your certificate, including the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- lines.
