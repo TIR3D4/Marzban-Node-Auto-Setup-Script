@@ -9,10 +9,28 @@ This repository contains a Python script that automates the setup and integratio
 
 ## Installation
 
-1. **Clone the Repository**
+Download and Run the Script
 
-   First, clone this repository to your server:
+Use the following command to download the Python script directly from the repository and execute it:
 
-   ```bash
-   git clone https://github.com/yourusername/marzban-node-auto-setup.git
-   cd marzban-node-auto-setup
+bash
+Copy code
+curl -O https://raw.githubusercontent.com/TIR3D4/Marzban-Node-Auto-Setup-Script/main/setup_marzban_node.py
+sudo python3 setup_marzban_node.py
+Enter SSL Certificate
+
+During the execution of the script, you will be prompted to enter your SSL certificate. Paste the content of your certificate, including the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- lines.
+
+Completion
+
+The script will automatically:
+
+Update and upgrade the system.
+Install Docker and required packages.
+Clone the Marzban-node repository.
+Configure Docker with the necessary settings.
+Deploy the node with Docker.
+Troubleshooting
+Ensure your SSL certificate is in the correct PEM format.
+The server should have internet access to download packages and clone the repository.
+If the script fails, check the output for any errors, correct them, and re-run the script.
